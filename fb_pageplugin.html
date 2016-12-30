@@ -1,182 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Facebook Page Plugin</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+body {
+  background-color:transparent;
+  margin:0;
+  padding:0;
+}
+iframe{border:0}
+</style>
+<script>
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+var pages = getQueryVariable("page");
+</script>
+</head>
 <body>
-<table>
-  <tbody>
-    <tr>
-      <td value="1"></td>
-      <td>&lt;!DOCTYPE html&gt; </td>
-    </tr>
-    <tr>
-      <td value="2"></td>
-      <td>&lt;html&gt; </td>
-    </tr>
-    <tr>
-      <td value="3"></td>
-      <td>&lt;head&gt; </td>
-    </tr>
-    <tr>
-      <td value="4"></td>
-      <td>&lt;meta charset=&quot;utf-8&quot;&gt; </td>
-    </tr>
-    <tr>
-      <td value="5"></td>
-      <td>&lt;title&gt;Facebook Page Plugin&lt;/title&gt; </td>
-    </tr>
-    <tr>
-      <td value="6"></td>
-      <td>&lt;meta content='width=device-width, initial-scale=1' name='viewport'&gt; </td>
-    </tr>
-    <tr>
-      <td value="7"></td>
-      <td>&lt;style&gt; </td>
-    </tr>
-    <tr>
-      <td value="8"></td>
-      <td>body { </td>
-    </tr>
-    <tr>
-      <td value="9"></td>
-      <td> background-color:transparent; </td>
-    </tr>
-    <tr>
-      <td value="10"></td>
-      <td> margin:0; </td>
-    </tr>
-    <tr>
-      <td value="11"></td>
-      <td> padding:0; </td>
-    </tr>
-    <tr>
-      <td value="12"></td>
-      <td>} </td>
-    </tr>
-    <tr>
-      <td value="13"></td>
-      <td>iframe{border:0} </td>
-    </tr>
-    <tr>
-      <td value="14"></td>
-      <td>&lt;/style&gt; </td>
-    </tr>
-    <tr>
-      <td value="15"></td>
-      <td>&lt;script&gt; </td>
-    </tr>
-    <tr>
-      <td value="16"></td>
-      <td>function getQueryVariable(variable) { </td>
-    </tr>
-    <tr>
-      <td value="17"></td>
-      <td> var query = window.location.search.substring(1); </td>
-    </tr>
-    <tr>
-      <td value="18"></td>
-      <td> var vars = query.split(&quot;&amp;&quot;); </td>
-    </tr>
-    <tr>
-      <td value="19"></td>
-      <td> for (var i=0;i&lt;vars.length;i++) { </td>
-    </tr>
-    <tr>
-      <td value="20"></td>
-      <td> var pair = vars[i].split(&quot;=&quot;); </td>
-    </tr>
-    <tr>
-      <td value="21"></td>
-      <td> if(pair[0] == variable){return pair[1];} </td>
-    </tr>
-    <tr>
-      <td value="22"></td>
-      <td> } </td>
-    </tr>
-    <tr>
-      <td value="23"></td>
-      <td> return(false); </td>
-    </tr>
-    <tr>
-      <td value="24"></td>
-      <td>} </td>
-    </tr>
-    <tr>
-      <td value="25"></td>
-      <td>var pages = getQueryVariable(&quot;page&quot;); </td>
-    </tr>
-    <tr>
-      <td value="26"></td>
-      <td>&lt;/script&gt; </td>
-    </tr>
-    <tr>
-      <td value="27"></td>
-      <td>&lt;/head&gt; </td>
-    </tr>
-    <tr>
-      <td value="28"></td>
-      <td>&lt;body&gt; </td>
-    </tr>
-    <tr>
-      <td value="29"></td>
-      <td>&lt;script&gt; </td>
-    </tr>
-    <tr>
-      <td value="30"></td>
-      <td>document.write('&lt;div class=&quot;fb-page&quot; data-href=&quot;https://www.facebook.com/'+ pages +'/&quot; data-tabs=&quot;messages, timeline , events&quot; data-width=&quot;300&quot; data-height=&quot;330&quot; data-small-header=&quot;true&quot; data-adapt-container-width=&quot;false&quot; data-hide-cover=&quot;false&quot; data-show-facepile=&quot;false&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/'+ pages +'/&quot; class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;a href=&quot;https://www.facebook.com/'+ pages +'/&quot;&gt;Loading....&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;'); </td>
-    </tr>
-    <tr>
-      <td value="31"></td>
-      <td>&lt;/script&gt; </td>
-    </tr>
-    <tr>
-      <td value="32"></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td value="33"></td>
-      <td>&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt; </td>
-    </tr>
-    <tr>
-      <td value="34"></td>
-      <td>&lt;script&gt;(function(d, s, id) { </td>
-    </tr>
-    <tr>
-      <td value="35"></td>
-      <td> var js, fjs = d.getElementsByTagName(s)[0]; </td>
-    </tr>
-    <tr>
-      <td value="36"></td>
-      <td> if (d.getElementById(id)) return; </td>
-    </tr>
-    <tr>
-      <td value="37"></td>
-      <td> js = d.createElement(s); js.id = id; </td>
-    </tr>
-    <tr>
-      <td value="38"></td>
-      <td> js.src = &quot;https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&quot;; </td>
-    </tr>
-    <tr>
-      <td value="39"></td>
-      <td> fjs.parentNode.insertBefore(js, fjs); </td>
-    </tr>
-    <tr>
-      <td value="40"></td>
-      <td>}(document, 'script', 'facebook-jssdk'));&lt;/script&gt; </td>
-    </tr>
-    <tr>
-      <td value="41"></td>
-      <td>&lt;/body&gt; </td>
-    </tr>
-    <tr>
-      <td value="42"></td>
-      <td>&lt;/html&gt;</td>
-    </tr>
-  </tbody>
-</table>
+<script>
+document.write('<div class="fb-page" data-href="https://www.facebook.com/'+ pages +'/" data-tabs="messages, timeline , events" data-width="300" data-height="330" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/'+ pages +'/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/'+ pages +'/">Loading....</a></blockquote></div>');
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
